@@ -66,15 +66,15 @@ print("4. Sending the Email...")
 # --- 4. SEND THE AUTOMATED EMAIL ---
 
 # ⚠️ CHANGE THESE THREE LINES! ⚠️
-SENDER_EMAIL = "panadero.jovitpaul@gmail.com" 
-APP_PASSWORD = "lugofavilrsqbwzl" # No spaces!
-RECEIVER_EMAIL = "jpaulmagadan@gmail.com" # You can send it to yourself as a test
+SENDER_EMAIL = "Your email here" 
+APP_PASSWORD = "Your password here" # No spaces!
+RECEIVER_EMAIL = "another email here" # You can send it to yourself as a test
 
 # Create the email message
 msg = EmailMessage()
 msg['Subject'] = f"🚨 QA ALERT: {target_defect} limits exceeded!"
-msg['From'] = "panadero.jovitpaul@gmail.com"
-msg['To'] = "jpaulmagadan@gmail.com"
+msg['From'] = "Your email here"
+msg['To'] = "another email here"
 msg.set_content(f"Warning: The {target_defect} defect count today was {today_value}, which exceeds the Upper Control Limit of {UCL:.1f}.\n\nPlease see the attached SPC chart and investigate the production line.")
 
 # Attach the image we just saved
@@ -89,3 +89,4 @@ try:
     print("✅ SUCCESS! Check your email inbox!")
 except Exception as e:
     print("❌ Failed to send email. Error:", e)
+

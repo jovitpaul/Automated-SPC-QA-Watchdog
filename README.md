@@ -1,6 +1,6 @@
 # Automated-SPC-QA-Watchdog
 An event-driven Python architecture for Automated Statistical Process Control (SPC) in Food Manufacturing.
-# Automated Statistical Process Control (SPC) Watchdog
+# Automated Statistical Process Control (SPC) Watchdog for a Food Manufacturing
 
 **Author:** Jovit Paul Magadan | Plant Manager, Agricultural Engineer & MBA 
 **Industry:** Food & Beverage Manufacturing / QA Automation  
